@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+}
+
+#site-name {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#site-name a {
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+}
+
+.header-content h2 {
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(248, 244, 239);
+    box-shadow: 0 8px 6px -9px black;
+    height: 70px;
+}
+
+#main-navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style: none;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+}
+
+#main-navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#main-image {
+    width: 100%;
+    height: auto;
+}
