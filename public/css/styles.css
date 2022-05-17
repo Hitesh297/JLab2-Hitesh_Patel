@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo:wght@400;500&family=Montserrat&family=Roboto+Mono&display=swap');
 
 body {
     margin: 0;
@@ -13,6 +13,7 @@ body {
 #site-name a {
     text-decoration: none;
     font-family: 'Caveat', cursive;
+    color: #ff3558;
 }
 
 .header-content h2 {
@@ -24,15 +25,41 @@ body {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    background-color: rgb(248, 244, 239);
+    justify-content: space-between;
     box-shadow: 0 8px 6px -9px black;
     height: 70px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 25px;
+    width: 40%;
+}
+
+#search-icon {
+    fill: #696e79;
+    vertical-align: middle;
+    background: #f5f5f6;
+    width: 5%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px 0 0 4px;
 }
 
 #main-navigation ul {
     display: flex;
     flex-direction: row;
-    gap: 35px;
+    gap: 0px;
     list-style: none;
     font-family: 'Exo', sans-serif;
     font-weight: 500;
@@ -41,9 +68,172 @@ body {
 #main-navigation ul li a{
     text-decoration: none;
     color: black;
+    padding: 25px 20px 25px 20px;
+    transition: 0.2s;
+}
+
+#main-navigation ul li a:hover {
+    background-color: #ff9cac;
 }
 
 #main-image {
     width: 100%;
     height: auto;
+    padding-top: 40px;
 }
+
+#product-search input {
+    height: 20px;
+    font-size: 14px;
+    width: 85%;
+    color: #696e79;
+    padding: 8px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    background: #f5f5f6;
+}
+
+#product-search {
+    width: 70%;
+}
+
+footer {
+    max-width: 100%;
+    background: #FAFBFC;
+    margin: auto;
+}
+
+#site-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+
+.footer-title {
+    font-family: 'Exo', sans-serif;
+    padding-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a{
+    color: #696b79;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    line-height: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links:last-child li {
+    margin: 25px 0 25px 0;
+    width: 320px;
+}
+
+.footer-links:last-child li a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#site-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #eaeaea;
+    padding: 10px 140px 10px 140px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: black;
+}
+
+#offers ul li {
+    display: inline;
+    font-family: 'Exo', sans-serif;
+    width: 200px;
+}
+
+#offers ul{
+    padding: 0;
+}
+
+#offers {
+    overflow: auto;
+    white-space: nowrap;
+    width: 98%;
+    margin: auto;
+}
+
+#offers ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.list-item-container img {
+    width: 100%;
+    /* display: block; */
+    /* display: inline; */
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.item-title {
+    margin: 3px 0 3px 0;
+    font-weight: 700;
+
+}
+
+.item-description {
+    margin-top: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.item-rate {
+    margin-top: 5px;
+}
+
+.item-rate .old-price {
+    font-size: small;
+}
+
+.item-rate .discount {
+    color: #f75a0b;
+    font-size: small;
+}
+
+.list-item-container {
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    transition: 0.2s;
+}
+
+.list-item-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-item-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+

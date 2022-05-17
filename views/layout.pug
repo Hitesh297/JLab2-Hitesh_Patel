@@ -2,26 +2,105 @@ doctype html
 html 
   head 
     meta(charset="utf-8")
-    title #{title} | Test website
+    title #{title} | Shop Unlimited
     link(rel="stylesheet" href="/css/styles.css")
   body
     header#header
-      .header-content 
-        h2#site-name 
-          a(href="/") Shop Unlimited
-        nav(id="main-navigation" aria-label="Main navigation")
-          ul 
-            li 
-              a(href="/") MEN
-            li 
-              a(href="/") WOMEN
-            li 
-              a(href="/") KIDS
-            li 
-              a(href="/") HOME & LIVING
-            li 
-              a(href="/") BEAUTY
+      .header-content
+        .header-left
+          h2#site-name 
+            a(href="/") Shop Unlimited
+          nav(id="main-navigation" aria-label="Main navigation")
+            ul 
+              li 
+                a(href="/") MEN
+              li 
+                a(href="/") WOMEN
+              li 
+                a(href="/") KIDS
+              li 
+                a(href="/") HOME & LIVING
+              li 
+                a(href="/") BEAUTY
+        .header-right
+          #product-search
+            //- https://icons8.com/icons/set/search
+            svg(xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24")#search-icon
+              path(d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z")
+            input(type="text" placeholder="Search for products, brands and more")
+          a(href="/") Log In
     main#main 
       block layout-content 
-    footer#footer 
-      p &copy; Copyright HTTP5211, 2022.
+    footer#footer
+      section#site-links-container  
+        ul.footer-links
+          li
+            p.footer-title ONLINE SHOPPING  
+          li 
+            a(href="/") Men
+          li 
+            a(href="/") Women
+          li 
+            a(href="/") Kids
+          li 
+            a(href="/") Home & Living
+          li 
+            a(href="/") Beauty
+          li 
+            a(href="/") Gift Cards 
+        ul.footer-links
+          li
+            p.footer-title USEFUL LINKS  
+          li 
+            a(href="/") Contact Us
+          li 
+            a(href="/") FAQ
+          li 
+            a(href="/") T&C
+          li 
+            a(href="/") Terms Of Use
+          li 
+            a(href="/") Track Orders
+          li 
+            a(href="/") Shipping 
+          li 
+            a(href="/") Cancellation 
+          li 
+            a(href="/") Returns 
+          li 
+            a(href="/") Whitehat 
+          li 
+            a(href="/") Blog 
+          li 
+            a(href="/") Careers 
+        ul.footer-links
+          li
+            p.footer-title EXPERIENCE SHOP UNLIMITED APP ON MOBILE  
+          li 
+            a(href="/") 
+              //- https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png
+              img(src="/images/google_play.png" alt="google play icon" width="160")
+          li 
+            a(href="/")
+              //- https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png
+              img(src="/images/apple_store.png" alt="google store icon" width="160")
+        ul.footer-links
+          li
+            a(href="/") 
+              //- https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png
+              img(src="/images/original.png" alt="image displaying original stamp" width="50")
+              span 
+                strong 100% 
+                | ORIGINAL guarantee for all products at shopunlimited.com
+          li 
+            a(href="/")
+              //- https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png
+              img(src="/images/30days.png" alt="30 days return policy image" width="50")
+              span 
+                strong Return within 30days 
+                | of receiving your order
+      section#site-info
+        #contact In case of any concern, 
+          a(href="/") 
+            strong Contact Us
+        #copyrights © 2022 www.shopunlimited.com. All rights reserved.
