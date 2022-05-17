@@ -4,6 +4,7 @@ body {
     margin: 0;
 }
 
+/* styles for header */
 #site-name {
     padding: 10px;
     width: 100px;
@@ -65,6 +66,15 @@ body {
     font-weight: 500;
 }
 
+h4 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    padding: 0;
+    margin: 20px 0 0 30px;
+}
+
+/* styles for navigation menu */
 #main-navigation ul li a{
     text-decoration: none;
     color: black;
@@ -73,13 +83,7 @@ body {
 }
 
 #main-navigation ul li a:hover {
-    background-color: #ff9cac;
-}
-
-#main-image {
-    width: 100%;
-    height: auto;
-    padding-top: 40px;
+    background-color: #dddddd;
 }
 
 #product-search input {
@@ -96,73 +100,38 @@ body {
     background: #f5f5f6;
 }
 
-#product-search {
-    width: 70%;
-}
-
-footer {
-    max-width: 100%;
-    background: #FAFBFC;
-    margin: auto;
-}
-
-#site-links-container {
+/* style for profile items */
+#profile-items {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
     list-style: none;
-    gap: 100px;
-}
-
-.footer-title {
-    font-family: 'Exo', sans-serif;
-    padding-bottom: 10px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li a{
-    color: #696b79;
-    display: block;
-    font-size: 15px;
-    text-decoration: none;
-    padding-bottom: 5px;
-    cursor: pointer;
-    line-height: normal;
+    text-align: center;
+    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.footer-links:last-child li {
-    margin: 25px 0 25px 0;
-    width: 320px;
+#profile-items img {
+    width: 20px;
 }
 
-.footer-links:last-child li a{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#site-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
-    background-color: #eaeaea;
-    padding: 10px 140px 10px 140px;
-}
-
-#contact a{
+#profile-items a {
     text-decoration: none;
     color: black;
 }
 
+#main-image {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+}
+
+#product-search {
+    width: 70%;
+}
+
+/* styles for offers section */
 #offers ul li {
     display: inline;
     font-family: 'Exo', sans-serif;
@@ -235,5 +204,71 @@ footer {
 .list-item-container:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+/* styling for footer */
+footer {
+    max-width: 100%;
+    background: #FAFBFC;
+    margin: auto;
+}
+
+#site-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+
+.footer-title {
+    font-family: 'Exo', sans-serif;
+    padding-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a{
+    color: #696b79;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    line-height: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links:last-child li {
+    margin: 25px 0 25px 0;
+    width: 320px;
+}
+
+.footer-links:last-child li a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#site-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #eaeaea;
+    padding: 10px 140px 10px 140px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 
